@@ -2581,7 +2581,7 @@ function comments(data) {
 
 
 // function student(student1 = "Present", student2 = "Absent", student3="Absent") {
-    
+
 //     console.log(student1, student2, student3)
 //     return true;
 // }
@@ -2660,7 +2660,7 @@ function comments(data) {
 
 // let array = [2,3,42,14,21,34,23,53,64];
 // console.log(array.filter((ele)=>ele===34));
-    
+
 
 // console.log(array.map((ele)=>ele===21));
 
@@ -2714,7 +2714,7 @@ function comments(data) {
 
 // // function uniqueValues(array){
 // //     let unique=[];
-    
+
 // //     for(let i=0;i<array.length;i++){
 // //         let exists= unique.includes(array[i]);
 // //         if(!exists){
@@ -2747,6 +2747,200 @@ function comments(data) {
 // console.log(unique_values(fruits));
 // console.log(unique_values(city));
 
+
+
+
+
+
+
+
+
+
+// Reverse a string
+
+
+
+// let a = "Venukumar";
+
+// let reverse = "";
+
+
+// for (let i=a.length-1;i>=0;i--){
+//     reverse = reverse + a[i]
+// }
+
+// console.log(reverse)
+
+
+
+
+
+// palindrome program
+
+
+
+// let a = "venu";
+
+
+// let b= a.toLowerCase()
+
+// console.log(b)
+
+
+// let reverseWord = ""
+
+
+// for(let i=b.length -1;i>=0;i--){
+
+//     reverseWord = reverseWord+b[i]
+// }
+
+// console.log("reverseWord--------",reverseWord)
+
+
+// if(b===reverseWord){
+//     console.log("the word is palindrome")
+// }else{
+//     console.log("the word is not palindrome")
+// }
+
+
+
+
+// let  a = "Venukumar"
+
+
+// let unique = [];
+
+
+// for (let i=0;i<a.length;i++){
+//     let exist = unique.includes(a[i])
+
+//     if(!exist){
+//         unique.push(a[i])
+//     }
+// }
+
+// console.log(unique)
+
+
+
+
+// let a = "Venukumar";
+
+// let unique = "";
+
+
+// for (let i=0;i<a.length;i++){
+
+
+//     if(unique.indexOf(a[i]) === -1){
+//         unique =  unique+ a[i]
+//     }
+// }
+
+// console.log(a);
+// console.log(unique)
+
+
+
+
+// let str = "programming";
+// let result = "";
+
+// for (let i = 0; i < str.length; i++) {
+
+//   // If character is not already in result, add it
+//   if (result.indexOf(str[i]) === -1) {
+//     result += str[i];
+//   }
+// }
+
+// console.log("Original String:", str);
+// console.log("After Removing Duplicates:", result);
+
+
+
+//  Finding unique values of a string (or) Removing duplicates of a string
+
+
+// let str = "Venukumar and Jagan"
+
+// let unique = "";
+
+
+// for(let i=0;i<str.length;i++){
+
+//     if(unique.indexOf(str[i])=== -1){
+//         unique = unique + str[i]
+
+//     }
+// }
+
+// console.log(str)
+// console.log(unique)
+
+
+
+// finding first Non Repeating character of a string
+
+
+// let str = "aabbccdeefd"
+
+// let firstNonRepeat = "";
+
+// for (let i = 0; i < str.length; i++) {
+//     let count = 0;
+
+//     for (let j = 0; j < str.length; j++) {
+
+//         if (str[i] === str[j]) {
+//             count = count + 1;
+//         }
+//     }
+
+//     // console.log(count)
+
+
+//     if (count === 1) {
+//         firstNonRepeat = str[i]
+//     }
+
+//     // console.log(firstNonRepeat);
+
+// }
+
+// console.log(firstNonRepeat);
+
+
+// if(count === 1){
+//     firstNonRepeat = str[i]
+// }
+
+// console.log(firstNonRepeat);
+
+
+
+
+// let str = "aabbccddefgh"
+
+// let firstNonRepeat =""
+
+// for(let i=0;i<str.length;i++){
+//     let count = 0;
+
+//     for(let j=0;j<str.length;j++){
+//         if(str[i]=== str[j]){
+//             count = count +1;
+//         }
+//     }
+
+//     if(count===1){
+//         firstNonRepeat = str[i]
+//     }
+// }
+
+// console.log(firstNonRepeat)
 
 
 
