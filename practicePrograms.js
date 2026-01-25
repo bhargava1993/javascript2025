@@ -253,30 +253,330 @@
 // }
 
 
-// Find the longest substring of a string
+// Find the longest substring  without repeatingof a string
 
-let str = "venukumar and vkvkavak"
+// let str = "venukumar and vkvkavak"
 
-let longest ="";
+// let longest ="";
 
-for(let i=0;i<str.length;i++){
-    let temp ="";
+// for(let i=0;i<str.length;i++){
+//     let temp ="";
 
-    for(let j=0;j<str.length;j++){
+//     for(let j=0;j<str.length;j++){
 
-        if(temp.includes(str[i])){
-            break;
+//         if(temp.includes(str[i])){
+//             break;
+//         }
+
+
+
+//         temp = temp + str[j];
+//     }
+
+//     if(temp.length > longest.length){
+//         longest = temp;
+//     }
+// }
+
+// console.log("longest substring------",longest)
+// console.log("length of longest substring-------",longest.length)
+
+
+
+
+// let str = "abaabcabacabacbacbabcabc"
+
+// let longest = "";
+
+// for(let i=0;i<str.length;i++){
+//     let temp = "";
+
+//     for(let j=0;j<str.length;j++){
+//       if(temp.includes(str[i])){
+//         break;
+//       }
+
+//       temp = temp +str[j];
+//     }
+
+//     if(temp.length > longest.length){
+//         longest = temp;
+//     }
+// }
+
+// console.log("longest substring---------",longest)
+// console.log("longest substring length-------",longest.length)
+
+
+// convert string into interger 
+
+
+// let str= "1234";
+
+// let num = 0;
+
+
+// for(let i=0;i<str.length;i++){
+//     num = num *10 + (str[i] - "0")
+// }
+
+// console.log("num---",num)
+
+
+// let str = "563748";
+
+// let num =0;
+
+// for(let i=0;i<str.length;i++){
+//     num = num *10 + (str[i] - "0")
+// }
+
+// console.log("num------",num)
+
+
+
+
+// Find most frequent character in astring
+
+
+
+// let str = "venukumarvenukumarvenukumar"
+
+// let maxCount = 0;
+// let maxChar = "";
+
+
+// for(let i=0;i<str.length;i++){
+//     let count = 0;
+
+//     for(let j=0;j<str.length;j++){
+
+//         if(str[i] === str[j]){
+//             count = count +1;
+//         }
+//     }
+
+//     if(count >maxCount){
+//         maxCount =count;
+//         maxChar = str[i];
+
+//     }
+// }
+
+
+// console.log("Most Frequent number -----",maxChar);
+// console.log("maxCount ----------",maxCount);
+
+
+
+// let str = "venukuamrafdjoweireimnfvsd.fnga;wiottarwiv ,askgjar";
+
+// let maxChar ="";
+// let maxCount = 0;
+
+
+// for(let i=0;i<str.length;i++){
+//     let count =0;
+
+//     for(let j=0;j<str.length;j++){
+//         if(str[i] === str[j]){
+//             count = count +1;
+//         }
+//     }
+
+//     if(count >maxCount){
+//         maxCount = count;
+//         maxChar = str[i];
+
+//     }
+// }\
+
+// console.log("maximum count-------",maxCount)
+// console.log("most freqquent character----------",maxChar)
+
+
+
+
+// let str = "abc";
+
+// for(let i=0;i<str.length;i++){
+//     let substring = "";
+
+//     for(let j=i;j<str.length;j++){
+//         substring = substring + str[j];
+        
+//     }
+//     console.log(substring);
+
+// }
+
+
+// let str = "Venukumar";
+
+
+// for(let i=0;i<str.length;i++){
+//     let substring = "";
+
+//     for(let j=i;j<str.length;j++){
+//         substring = substring +str[i]
+//     }
+//     console.log(substring)
+// }
+
+
+
+// Remove all white spaces from a string
+
+
+// let str = "Hello Venukumar How are you "
+
+// let result = "";
+
+// for(let i=0;i<str.length;i++){
+//     if(str[i] !== " "){
+//         result = result + str[i]
+//     }
+// }
+
+// console.log(result)
+
+
+
+
+
+// Convert String to Title Case 
+
+// str = "hello world welcome";
+
+// let result = "";
+
+
+// let words = str.split(" ")
+// console.log(words);
+
+
+// for(let i=0;i<words.length;i++){
+//     let word  = words[i];
+
+//     result = result + word[0].toUpperCase() + word.slice(1) + " ";
+
+// }
+// console.log("result-------",result.trim())
+
+
+
+
+// Find the No.of words in a string 
+
+// let str = "Hello Venukumar How are You"
+
+// let words = str.split(" ")
+
+// console.log("no.of words-----",words.length)
+
+
+// let str = "Hello Venukumar How are you";
+
+// let words = str.split(" ");
+// let shorter = words[0];
+
+// for(let i=0;i<words.length;i++){
+//     if(words[i].length < shorter.length){
+//         shorter = words[i];
+//     }
+// }
+
+// console.log("shortest word-----",shorter)
+
+
+// let str = "Hello Venukumar How are you";
+
+// let words = str.split(" ");
+// let shorter = words[0];
+
+// for(let i=0;i<words.length;i++){
+//     if(words[i].length < shorter.length){
+//         shorter = words[i];
+//     }
+// }
+// console.log("shorter words--------",shorter)
+
+
+
+function longestPalindrome(str){
+    let longest = "";
+
+    for(let i=0;i<str.length;i++){
+
+        for(let j=1;j<str.length;j++){
+
+            let substring =str.slice(i , j+1);
+
+
+            if(isPalindrome(substring)&& substring.length >longest.length){
+                longest = substring;
+            }
         }
-
-
-
-        temp = temp + str[j];
     }
-
-    if(temp.length > longest.length){
-        longest = temp;
-    }
+    return longest;
 }
 
-console.log("longest substring------",longest)
-console.log("length of longest substring-------",longest.length)
+
+function isPalindrome(s){
+    let left = 0;
+    let right = s.length -1;
+
+    while (left < right) {
+        if (s[left] !== s[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+let str = "level and racecar and abcdcba";
+console.log("Longest Palindrome:", longestPalindrome(str));
+
+
+
+// function longestPalindrome(str) {
+//     let longest = "";
+
+//     for (let i = 0; i < str.length; i++) {
+
+//         for (let j = i; j < str.length; j++) {
+
+//             let substring = str.slice(i, j + 1);
+
+//             // Check if substring is palindrome
+//             if (isPalindrome(substring) && substring.length > longest.length) {
+//                 longest = substring;
+//             }
+//         }
+//     }
+
+//     return longest;
+// }
+
+// Function to check palindrome
+// function isPalindrome(s) {
+//     let left = 0;
+//     let right = s.length - 1;
+
+//     while (left < right) {
+//         if (s[left] !== s[right]) {
+//             return false;
+//         }
+//         left++;
+//         right--;
+//     }
+
+//     return true;
+// }
+
+// Example
+// let str = "babad";
+// console.log("Longest Palindrome:", longestPalindrome(str));
