@@ -2944,3 +2944,764 @@ function comments(data) {
 
 
 
+
+
+// for (let i=0;i<=10;i++){
+//     console.log(i)
+// }
+
+
+
+// for(let i=10;i>=0;i--){
+//     console.log(i)
+// }
+
+
+//   for(let i=0;i<=10;i++){
+//     if(i%2==0){
+//         // console.log(i)
+//     }else{
+//         console.log(i)
+//     }
+//   }
+
+//   for(let i=1;i<=10;i+=2){
+//     console.log(i);
+//   }
+
+
+// let array = [10,20,30,40,50,60];
+// let add =0;
+
+
+// for(let i=0;i<array.length;i++){
+//     console.log(array[i])
+// }
+
+// for(let i=array.length-1;i>=0;i--){
+//     console.log(array[i])
+// }
+
+// for(let i=0;i<array.length;i++){
+//     add  = add + array[i]
+// }
+
+// console.log(add)
+
+
+// for(let i=0;i<array.length;i++){
+//     add  = add - array[i]
+// }
+
+// console.log(add)
+
+
+// for(let i=array.length-1;i>=0;i--){
+//     add  = add - array[i]
+// }
+
+// console.log(add)
+
+// let array = [10,20,30,40,50,60];
+// let reverse = [];
+
+// for(let i=array.length-1;i>=0;i--){
+//     reverse.push(array[i]);
+// }
+// console.log(reverse)
+
+
+// let array1 = [10,20,30,40,50,60];
+
+// let array2 = [20,30,40,50,60,70];
+// let sum = []
+
+// for(let i=0;i<array1.length;i++){
+//     sum[i] = array1[i] + array2[i]
+// }
+// console.log(sum)
+
+
+// let num = 5;
+// let factorial = 1;
+
+// for(let i=1;i<=num;i++){
+//     factorial = factorial * i;
+
+// }
+// console.log(factorial)
+
+// let num = 5;
+// let factorial = 1;
+// for(let i =1;i<=num;i++){
+//     factorial = factorial* i
+// }
+
+// console.log(factorial)
+
+
+// let num =15;
+// let table = 1;
+
+// for(let i=1;i<=10;i++){
+//     table = num + "*" + i + "=" +num *i;
+//     console.log(table);
+// }
+// // console.log(table)
+
+
+// let word = "racecar";
+// let reverse = "";
+
+// for(let i= word.length-1;i>=0;i--){
+//     reverse = reverse + word[i]
+
+// }
+// console.log(reverse);
+
+// if(word === reverse){
+//     console.log("It is a palindrome")
+// }else{
+//     console.log("It is not a palindrome")
+// }
+
+
+// let num = 13;
+
+// let isPrime = true;
+
+// for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//         // console.log("It not a prime number");
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if (num < 2) {
+//     console.log("IT is not a prime number");
+// } else if (isPrime) {
+//     console.log("It is a prime number")
+
+// } else {
+//     console.log("It is not a prime number")
+// }
+
+// let num = 29;
+// let isPrime = true;
+
+// for(let i = 2 ;i<num;i++){
+//     if(num % i === 0){
+//         // console.log("It is not a prime number")
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if(num <2 ){
+//     console.log("It is not a prime number");
+// }else if(isPrime){
+//     console.log("It is a Prime Number");
+// }else{
+//     console.log("It is not a prime number");
+// }
+
+
+// let fruits = ["Apple","Banana","Grapes","Mangos"];
+
+// for(let i=0;i<fruits.length;i++){
+//     if(fruits[i]==="Grapes" ){
+//         console.log(i)
+//         console.log("The value is exists")
+//         fruits[i] = "Oranges"
+//     }
+// }
+
+// console.log(fruits)
+
+
+// let fruits = ["Apple","Banana","Grapes","Mangos","Pine Apple","Custurd Apple","Pomogranite"];
+
+// let extracted_array = [];
+
+// for(let i=0;i<fruits.length;i++){
+//     if(i>=2 && i<6){
+//         extracted_array.push(fruits[i]);
+//     }
+// }
+
+// console.log(extracted_array)
+
+
+
+// let fruits = ["Apple","Banana","Grapes","Mangos","Pine Apple","Custurd Apple","Pomogranite","Mangos","Apple","Custurd Apple"];
+
+
+// let unique = [];
+
+// for(let i =0 ;i<fruits.length;i++){
+//     let exists = unique.includes(fruits[i])
+
+//     if(!exists){
+//         unique.push(fruits[i])
+//     }
+// }
+// console.log(unique)
+
+// let obj = {};
+
+// for(let i =0;i<fruits.length;i++){
+//     if(obj[fruits[i]]){
+//         obj[fruits[i]] = obj[fruits[i]] + 1;
+//     }else{
+//         obj[fruits[i]] = 1
+//     }
+// }
+
+// console.log(obj)
+// console.log(Object.keys(obj))
+
+
+
+// let names = {
+
+//     "venu" : 4,
+//     "jagan" :5,
+//     "murali" : 2,
+//     "hari" : 1,
+// }
+
+// let keys = Object.keys(names);
+// console.log(keys)
+
+// let values = Object.values(names);
+// console.log(values)
+
+// for(let i =0;i<keys.length;i++){
+//     // console.log(keys[i]);
+//     // console.log(names[keys[i]]);
+//     console.log(keys[i] + "=" + names[keys[i]])
+
+// }
+
+
+// let word = "Venukumar is good employee";
+
+// let lowerCaseWord = word.toLowerCase();
+// console.log(lowerCaseWord)
+
+// let vowels = "aeiou";
+// let count = 0;
+
+
+// for(let i=0;i<lowerCaseWord.length;i++){
+//     if(vowels.includes(lowerCaseWord[i])){
+//         count = count +1;
+//     } 
+// }
+
+// console.log(count);
+
+
+
+// let add =0;
+// for (let i=0;i<10;i++){
+//     // console.log(i);
+//     add = add + i
+// }
+// console.log(add)
+
+
+// let sub = 0;
+
+// for (let i=10;i>=0;i--){
+//     sub = sub - i;
+// }
+// console.log(sub);
+
+
+// for(let i=0;i<20;i++){
+//     if(i%2 !== 0){
+//         console.log(i)
+//     }
+// }
+
+
+// let arr = [12,23,34,45,56,67,78];
+// let arr1 = [10,20,30,40,50,60,70]
+
+// let add = [];
+
+// for (let i=0;i<arr.length;i++){
+//     add[i] = arr1[i] + arr[i]
+
+// }
+// console.log(add)
+
+
+// let num = 10;
+
+// let fact = 1
+
+// for(let i=1;i<num;i++){
+//     fact = fact * i;
+// }
+// console.log(fact);
+
+
+// let num= 2;
+
+// let result = 1;
+
+// for(let i=1;i<=10;i++){
+//     result = num +"*" +i +"="+ num*i
+//     console.log(result);
+// }
+
+
+// let word = "level";
+
+// let rev = "";
+
+// let words = word.toLowerCase();
+// console.log(words)
+
+// for(let i= words.length-1;i>=0;i--){
+//     rev = rev + words[i]
+// }
+// console.log(rev);
+// if(words === rev){
+//     console.log("It is a aplindrome")
+// }else{
+//     console.log("It is not a palindrome");
+// }
+
+
+// let num =29;
+
+// let isPrime = true;
+
+// for(let i=2;i<num;i++){
+//     if(num %i === 0){
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if(num<2){
+//     console.log("It is not a prime number");
+// }else if(isPrime){
+//     console.log("It is a prime number");
+// }else{
+//     console.log("It is not a prime number");
+// }
+
+
+// let fruits = ["Apple","Banana","Orange","Pomogranite","Grapes"];
+
+// for(let i=0;i<fruits.length;i++){
+//     if(fruits[i] === "Orange"){
+//         console.log(i)
+//         // fruits[i] = "Sapota"
+//         // console.log("Value is exist in array")
+//     }
+// }
+
+// console.log(fruits)
+
+
+// let fruits = ["Apple","Banana","Orange","Pomogranite","Grapes","sapota"];
+
+// let extract = [];
+
+// for(let i=0;i<fruits.length;i++){
+//     if(i>=1 && i<=4){
+//         extract.push(fruits[i]); 
+//     }
+// }
+
+// console.log(extract);
+
+
+// let fruits = ["Apple","Banana","Orange","Pomogranite","Grapes","sapota","Apple","Orange","Grapes","sapota"];
+
+// let unique = [];
+
+// for(let i=0;i<fruits.length;i++){
+
+//     let exists = unique.includes(fruits[i]);
+
+//     if(!exists){
+//         unique.push(fruits[i]);
+//     }
+// }
+
+// console.log(unique);
+
+// let obj = {};
+
+// for(let i=0;i<fruits.length;i++){
+//     if(obj[fruits[i]]){
+//         obj[fruits[i]] = obj[fruits[i]] +1;
+//     }else{
+//         obj[fruits[i]] = 1
+//     }
+// }
+// console.log(obj);
+// console.log(Object.keys(obj));
+
+
+// let cars = {
+//     Audi : 3,
+//     BMW : 10,
+//     lamburgini : 19,
+//     suzuki : 39,
+//     kia:10
+// }
+
+// // console.log(Object.keys(cars));
+// // console.log(Object.values(cars));
+// // console.log(Object.keys(cars))
+
+// let keys = Object.keys(cars);
+
+// for(let i=0;i<keys.length;i++){
+//     console.log(keys[i]);
+//     console.log(cars[keys[i]])
+//     console.log(keys[i] + "=" +cars[keys[i]] )
+// }
+// let fruits = ["Apple","Banana","Orange","Pomogranite","Grapes","sapota","Apple","Orange","Grapes","sapota"];
+
+// let reverse = [];
+// for(let i=fruits.length-1;i>=0;i--){
+//     reverse.push(fruits[i])
+
+// }
+// console.log(reverse);
+
+
+// let a = " Hi I am Venukumar and I am 22 years old";
+
+// let b = a.toLowerCase();
+
+// let vowels = "aeiou";
+
+// let count =0
+
+// for(let i =0;i<b.length;i++){
+//     if(vowels.includes(b[i])){
+//         count =count +1
+//     }
+// }
+
+// console.log(count);
+
+
+// let array = [20,34,12,83,29,10,33]
+
+// let max = array[0];
+
+// for(let i=0;i<array.length;i++){
+//     if(array[i]<max){
+//         max = array[i];
+//     }
+// }
+
+// console.log(max);
+
+
+
+// let num = 10;
+
+// let a = -1;
+// let b = 1;
+
+// for(let i=0;i<=num;i++){
+
+//     let c = a+b;
+//     if(c<num){
+//     console.log(c);
+//     a = b;
+//     b = c;
+//     }
+// }
+
+
+
+
+// let num = 153;
+// let temp = num;
+// let sum = 0
+
+// let digits = num.toString().length;
+
+// for(let i=0;i<digits;i++){
+//     let digit = temp % 10;
+//     sum = sum + digit ** digits;
+//     temp = Math.floor(temp /10);
+
+// }
+
+// if(sum === num){
+//     console.log("It is an armstrong number");
+// }else{
+//     console.log("It is not an armstrong number");
+// }
+
+
+
+
+// let add =0;
+// for (let i=0;i<=10;i++){
+//     add = add + i;
+// }
+
+// console.log( add);
+
+
+// for(let i=0;i<=10;i++){
+//     console.log(i);
+// }
+
+
+// for(let i=10;i>=0;i--){
+//     console.log(i)
+// }
+
+// for(let i=0;i<=10;i++){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+//     // console.log(i);
+// }
+
+
+
+// let array = [1,2,3,4,5,6];
+// let array1 = [3,4,5,7,7,8];
+
+// let sum = [];
+
+// for(let i = 0; i<array.length;i++){
+//     sum [i] = array[i] + array1[i];
+// }
+
+// console.log(sum);
+
+// let add = 0;
+// for(let i=0;i<array.length;i++){
+//     add = add + array[i];
+// }
+// console.log(add);
+
+
+// let num =5;
+// let fact = 1;
+
+// for (let i=num ; i>=1;i--){
+//     fact = fact * i;
+// }
+// console.log(fact);
+
+
+// let num = 10;
+
+// let  result = 1;
+// for(let i=1;i<=10;i++){
+//     // let result = 1;
+//     result = num + "*" + i +"=" +num*i;
+//     console.log(result);
+// }
+
+
+
+// let word = "racecar";
+// let rev = "";
+
+// for(let i=word.length-1;i>=0;i--){
+//     rev = rev + word[i];
+// }
+// if(rev === word ){
+//     console.log("It is a palindrome");
+// }else{
+//     console.log("It is not a palindrome");
+// }
+
+
+
+// let num = 49;
+
+// let isPrime = true;
+
+// for(let i=2;i<num;i++){
+//     if(num % i===0){
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if(num<2){
+//     console.log("It is not a prime number");
+// }else if(isPrime){
+//     console.log("It is a prime number");
+// }else{
+//     console.log("It is not a prime number");
+// }
+
+
+// function prime (num){
+//     let isPrime = true;
+
+// for(let i=2;i<num;i++){
+//     if(num % i===0){
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if(num<2){
+//     console.log("It is not a prime number");
+// }else if(isPrime){
+//     console.log("It is a prime number");
+// }else{
+//     console.log("It is not a prime number");
+// }
+
+// }
+
+
+// prime(29)
+// prime(10)
+
+
+
+// let fruits = ["apple", "banana", "grapes", "orange", "mango"];
+
+// for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === "orange") {
+//         console.log(i);
+//         console.log("It is exist in an array");
+
+//         fruits[i] = "pine apple"
+//     }
+
+// }
+// console.log(fruits)
+
+
+
+// let city = ["bng","hyd","chennai","gurugron","vizag","anantapur","Nellore","Kadiri"];
+
+// let extract = [];
+
+// for(let i =0;i<city.length;i++){
+//     if(i>=1 && i<6){
+//         extract.push(city[i]);
+        
+//     }
+// }
+
+// console.log(extract)
+
+
+
+// let city = ["bng","hyd","chennai","gurugron","vizag","anantapur","Nellore","Kadiri","bng","hyd","chennai","gurugron","vizag"];
+
+// let unique = [];
+
+// for(let i=0;i<city.length;i++){
+//     let exist = unique.includes(city[i]);
+
+//     if(!exist){
+//         unique.push(city[i]);
+//     }
+// }
+
+// console.log(unique);
+
+
+// let obj ={};
+
+// for(let i =0;i<city.length;i++){
+//     if(obj[city[i]]){
+//         obj[city[i]] = obj[city[i]] + 1;
+//     }else{
+//         obj[city[i]] = 1;
+//     }
+// }
+
+// console.log(obj)
+// console.log(Object.keys(obj));
+
+
+// let city = ["bng","hyd","chennai","gurugron","vizag","anantapur","Nellore","Kadiri","bng","hyd","chennai","gurugron","vizag"];
+
+// let reverse =[];
+
+// for(let i=city.length-1;i>=0;i--){
+//     reverse.push(city[i]);
+    
+// }
+
+// console.log(reverse);
+
+
+// let a = "Venukumar";
+// let b = a.toLowerCase();
+
+// let vowels = "aeiou";
+
+// let count = 0;
+
+// for (let i = 0;i<b.length;i++){
+//     if(vowels.includes(b[i])){
+//         count = count + 1;
+//     }
+// }
+// console.log(count);
+
+
+let arr = [12,13,14,19,16,1,13,15,16,14,16,36,26,245,62334,73,27,23];
+
+// let max = arr[0];
+
+// for(let i =0;i<arr.length;i++){
+//     if(arr[i]>max){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+
+// let min = arr[0];
+
+// for(let i =0;i<arr.length;i++){
+//     if(arr[i]<min){
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+
+
+
+
+// let num =10;
+
+// let a = -1;
+// let b = 1;
+
+// for(let i=0;i<=num;i++){
+//     let c = a + b;
+//     // console.log(c);
+//     if(c<=num){
+//         console.log(c);
+//         a = b ;
+//         b =c ; 
+        
+//     }
+//     // a = b ;
+//     // b =c ; 
+// }
+
+

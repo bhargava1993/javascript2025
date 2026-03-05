@@ -14,7 +14,6 @@
 // })
 
 
-
 // array.forEach((ele, index, arr) => {
 //     console.log(ele, "---", index, arr);
 // });
