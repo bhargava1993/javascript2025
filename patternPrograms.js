@@ -298,10 +298,10 @@
 
 // for(let i=1;i<=5;i++){
 //     let row="";
-//     for(let j=i;j<=5;j++){           for spaces
+//     for(let j=i;j<=5;j++){           //for spaces
 //         row=row+" ";
 //     }
-//     for(let k=1;k<=i;k++){          for stars
+//     for(let k=1;k<=i;k++){          //for stars
 //         row=row+"*"
 //     }
 //     console.log(row);
@@ -314,3 +314,42 @@
 //    ***
 //   ****
 //  *****
+
+
+
+// for(let i=1;i<=5;i++){
+//     let row="";
+//     for(let j=i;j<=5;j++){           //for spaces
+//         row=row+" ";
+//     }
+//     for(let k=1;k<=i;k++){          //for stars
+//         row=row+i
+//     }
+//     console.log(row);
+// }
+
+// output:
+//      1
+//     22
+//    333
+//   4444
+//  55555
+
+
+// for(let i=1;i<=5;i++){
+//     let row="";
+//     for(let j=i;j<=5;j++){           //for spaces
+//         row=row+" ";
+//     }
+//     for(let k=1;k<=i;k++){          //for stars
+//         row=row+k
+//     }
+//     console.log(row);
+// }
+
+// output:
+//      1
+//     12
+//    123
+//   1234
+//  12345
