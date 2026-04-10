@@ -3903,3 +3903,151 @@ function comments(data) {
 // }
 
 // console.log(reverse)
+
+// let arr = "vENUKUMAR Virat Kohli"
+
+// let name1 = arr.toLowerCase()
+
+// console.log(name1)
+
+// let vowels = "aeiou"
+
+// let count = 0
+
+// for(let i=0;i<name1.length;i++){
+//     if(vowels.includes(name1[i])){
+//         count = count +1
+//     }
+// }
+
+// console.log(count)
+
+// let arr = [1,2,341,12,-3,239,-10,742,394,23,53]
+
+// let max = arr[0]
+
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]< max ){
+//         max = arr[i]
+//     }
+// }
+// console.log(max)
+
+
+
+// let num = 10;
+
+// let a = -1;
+// let b = 1;
+
+// for(let i=0;i<=num;i++){
+//     let c = a+b;
+//     console.log(c)
+//     if(c <= 20){
+//     a = b;
+//     b = c
+//     }
+
+
+// }
+
+
+
+// let arr = ["Venu", "Kumar"]
+
+// let arr1 = ["Virat", "Kohli"]
+
+
+// let result = [...arr, ...arr1]
+// console.log(result);
+
+
+// let first ="Race Car";
+// let second= "Car Race";
+
+
+// let firstWord = first.toLowerCase().split("").sort().join("")
+// let secondWord = second.toLowerCase().split("").sort().join("")
+
+
+// console.log(firstWord)
+// console.log(secondWord)
+
+
+// if(firstWord=== secondWord){
+//     console.log("It is a anagram word")
+// }else{
+//     console.log("It is not a anagram word")
+// }
+
+// let num = 153;
+
+// let temp = num;
+
+// let sum = 0;
+
+// let digits = num.toString().length
+
+// console.log(digits)
+
+// for(let i=0;i<digits;i++){
+//     let digit = temp %10
+//     sum = sum + digit ** digits
+//     temp = Math.floor(temp/10)
+// }
+
+
+// if(sum === num){
+//     console.log("It is an armstrong Number")
+// }else{
+//     console.log("It is not an armstrong Number")
+// }
+
+
+
+// let num = 153;
+
+// let temp = num
+
+// let sum = 0
+
+// let digits = num.toString().length
+
+// for(let i=0;i<digits;i++){
+//     let digit = temp % 10;  // find last digit
+
+//     sum = sum + digit ** digits;
+
+//     temp = Math.floor( temp/10)  // Remove last digits
+// }
+
+// if(sum === num){
+//     console.log("It is an ArmStrong Number")
+// }else{
+//     console.log("It is not an ArmStrong Number")
+// }
+
+
+
+// Bubble Sort 
+
+function bubbleSort(arr){
+    let n = arr.length;
+
+    for(let i=0;i<n;i++){
+        for(let j=0;j<n-1-i;j++){
+            if(arr[j] > arr[j+1]){
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp;
+            }
+        }
+    }
+
+    return arr;
+
+}
+
+let num = [12,34,23,52,3,1,3,4,6];
+
+console.log(bubbleSort(num))
